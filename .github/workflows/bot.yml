@@ -3,9 +3,9 @@ name: Italian Word Bot
 on:
   schedule:
     # Morning message at 8:00 AM Italian time (7:00 UTC in winter, 6:00 UTC in summer)
-    - cron: '0 7 * * *'  # Adjust for your timezone
+    - cron: '39 19 * * *'  # Adjust for your timezone
     # Evening quiz at 8:30 PM Italian time (19:30 UTC in winter, 18:30 UTC in summer)
-    - cron: '30 19 * * *'  # Adjust for your timezone
+    - cron: '40 19 * * *'  # Adjust for your timezone
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
