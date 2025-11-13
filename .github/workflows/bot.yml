@@ -1,17 +1,16 @@
 name: Italian Word Bot
-
 on:
   schedule:
-    # Morning message at 8:00 AM Italian time (7:00 UTC in winter, 6:00 UTC in summer)
-    - cron: '00 20 * * *'  # Adjust for your timezone
+    # Word of the day at 8:15 PM Italian time (19:15 UTC in winter, 18:15 UTC in summer)
+    - cron: '15 19 * * *'
     # Evening quiz at 8:30 PM Italian time (19:30 UTC in winter, 18:30 UTC in summer)
-    - cron: '20 20 * * *'  # Adjust for your timezone
+    - cron: '30 19 * * *'
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
   send-word:
     runs-on: ubuntu-latest
-    if: github.event.schedule == '0 7 * * *' || github.event_name == 'workflow_dispatch'
+    if: github.event.schedule == '15 19 * * *' || github.event_name == 'workflow_dispatch'
     
     steps:
     - name: Checkout code
@@ -41,7 +40,7 @@ jobs:
 
   send-quiz:
     runs-on: ubuntu-latest
-    if: github.event.schedule == '30 19 * * *'
+    if: github.event.schedule == '30 19 * * *' || github.event_name == 'workflow_dispatch'
     
     steps:
     - name: Checkout code
