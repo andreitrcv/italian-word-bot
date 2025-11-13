@@ -1,179 +1,1250 @@
 {
   "words": [
     {
-      "word": "Serendipità",
-      "meaning": "La fortuna di fare scoperte felici per puro caso",
-      "example": "È stata pura serendipità incontrarti quel giorno."
-    },
-    {
-      "word": "Effimero",
-      "meaning": "Qualcosa che dura molto poco tempo, passeggero",
-      "example": "La bellezza dei fiori di ciliegio è effimera."
-    },
-    {
-      "word": "Nostalgia",
-      "meaning": "Sentimento di tristezza per la lontananza da persone o luoghi cari",
-      "example": "Provo nostalgia per i giorni della mia infanzia."
-    },
-    {
-      "word": "Meraviglioso",
-      "meaning": "Straordinario, che suscita meraviglia e ammirazione",
-      "example": "Abbiamo passato una serata meravigliosa insieme."
-    },
-    {
-      "word": "Sussurrare",
-      "meaning": "Parlare a voce molto bassa, mormorare",
-      "example": "Mi ha sussurrato un segreto all'orecchio."
+      "word": "Ineffabile",
+      "meaning": "Che non può essere espresso a parole, indicibile (spesso per bellezza o intensità)",
+      "example": "La vista delle montagne al tramonto era di una bellezza ineffabile."
     },
     {
       "word": "Struggente",
-      "meaning": "Che provoca un'emozione profonda e dolorosa",
-      "example": "Quella canzone ha una melodia struggente."
-    },
-    {
-      "word": "Baluginare",
-      "meaning": "Brillare con luce intermittente e tremolante",
-      "example": "Le stelle baluginano nel cielo notturno."
-    },
-    {
-      "word": "Carezze",
-      "meaning": "Gesti affettuosi fatti con la mano, tocchi delicati",
-      "example": "Le sue carezze mi fanno sentire amata."
+      "meaning": "Che provoca un'emozione profonda, acuta e spesso malinconica",
+      "example": "Quella melodia ha una nostalgia struggente."
     },
     {
       "word": "Languore",
-      "meaning": "Stato di debolezza fisica o sentimentale dolce e piacevole",
-      "example": "Nel pomeriggio d'estate sentivo un dolce languore."
+      "meaning": "Stato di debolezza fisica o spirituale, spesso dolce e malinconico",
+      "example": "Sentiva un dolce languore pomeridiano che lo invitava al riposo."
     },
     {
-      "word": "Spensierato",
-      "meaning": "Senza preoccupazioni, allegro e libero",
-      "example": "Da bambini eravamo così spensierati."
+      "word": "Baluginare",
+      "meaning": "Apparire e scomparire rapidamente, brillare a intermittenza",
+      "example": "Un'idea iniziò a baluginare nella sua mente."
     },
     {
-      "word": "Ineffabile",
-      "meaning": "Così bello o intenso che non può essere espresso a parole",
-      "example": "La gioia che provo con te è ineffabile."
+      "word": "Effimero",
+      "meaning": "Che dura per brevissimo tempo, passeggero, caduco",
+      "example": "La fama nel mondo dello spettacolo è spesso effimera."
     },
     {
-      "word": "Fulgido",
-      "meaning": "Molto luminoso, splendente",
-      "example": "Il sole fulgido illuminava la stanza."
+      "word": "Serendipità",
+      "meaning": "La fortuna di fare scoperte felici e inattese per puro caso",
+      "example": "Trovare quel libro raro è stata una vera serendipità."
     },
     {
-      "word": "Trepidante",
-      "meaning": "Pieno di ansia o eccitazione, in attesa di qualcosa",
-      "example": "Ero trepidante all'idea di rivederti."
+      "word": "Sprezzatura",
+      "meaning": "Una studiata noncuranza, un'apparente facilità nel fare cose difficili",
+      "example": "Il suo stile era caratterizzato da una raffinata sprezzatura."
     },
     {
-      "word": "Struggimento",
-      "meaning": "Sentimento di desiderio intenso e doloroso",
-      "example": "Sento uno struggimento quando penso a te."
+      "word": "Onirico",
+      "meaning": "Relativo ai sogni, che ha l'atmosfera di un sogno",
+      "example": "Il film è pervaso da un'atmosfera onirica e surreale."
     },
     {
-      "word": "Incantevole",
-      "meaning": "Che affascina e cattura l'attenzione, magico",
-      "example": "Hai un sorriso incantevole."
+      "word": "Etereo",
+      "meaning": "Leggero, impalpabile, quasi spirituale o celeste",
+      "example": "La ballerina si muoveva con una grazia eterea."
     },
     {
-      "word": "Vaghezza",
-      "meaning": "Mancanza di precisione, o desiderio vago e malinconico",
-      "example": "C'è una certa vaghezza nei miei ricordi d'infanzia."
+      "word": "Vagheggiare",
+      "meaning": "Desiderare ardentemente, immaginare con piacere un obiettivo",
+      "example": "Da giovane vagheggiava una vita di avventure."
     },
     {
-      "word": "Brioso",
-      "meaning": "Vivace, pieno di energia e allegria",
-      "example": "Sei sempre così brioso al mattino!"
+      "word": "Dicotomia",
+      "meaning": "Divisione di un concetto o di una realtà in due parti opposte",
+      "example": "Esiste una netta dicotomia tra teoria e pratica."
     },
     {
-      "word": "Soave",
-      "meaning": "Dolce, delicato e piacevole",
-      "example": "Il profumo dei fiori è soave."
+      "word": "Antinomia",
+      "meaning": "Contraddizione reale o apparente tra due leggi, principi o idee",
+      "example": "Il suo comportamento presentava un'antinomia tra parole e fatti."
     },
     {
-      "word": "Eterno",
-      "meaning": "Che non ha fine, che dura per sempre",
-      "example": "Il mio amore per te è eterno."
+      "word": "Esimio",
+      "meaning": "Eccellente, illustre, di grande pregio (usato in contesti formali)",
+      "example": "Abbiamo avuto l'onore di ascoltare l'esimio professore."
     },
     {
-      "word": "Gentilezza",
-      "meaning": "Qualità di chi è cortese, premuroso e delicato con gli altri",
-      "example": "La tua gentilezza mi conquista ogni giorno."
+      "word": "Pernicioso",
+      "meaning": "Che provoca grave danno, molto nocivo (moralmente o fisicamente)",
+      "example": "Le sue bugie hanno avuto un effetto pernicioso sulla loro amicizia."
     },
     {
-      "word": "Sublime",
-      "meaning": "Di altissimo valore, nobile ed elevato",
-      "example": "Quella poesia esprime sentimenti sublimi."
+      "word": "Nefasto",
+      "meaning": "Che porta sfortuna, funesto, disastroso",
+      "example": "Quel giorno si rivelò nefasto per le sorti dell'azienda."
     },
     {
-      "word": "Trasognato",
-      "meaning": "Immerso in pensieri o sogni, distratto dalla realtà",
-      "example": "Aveva uno sguardo trasognato mentre guardava il tramonto."
+      "word": "Lapalissiano",
+      "meaning": "Talmente ovvio e scontato da risultare quasi ridicolo",
+      "example": "Che l'acqua bagni è una verità lapalissiana."
     },
     {
-      "word": "Tenerezza",
-      "meaning": "Sentimento di affetto dolce e delicato",
-      "example": "Mi guarda sempre con tanta tenerezza."
+      "word": "Prolisso",
+      "meaning": "Eccessivamente lungo e minuzioso nel parlare o nello scrivere, verboso",
+      "example": "Il suo discorso fu così prolisso che annoiò il pubblico."
     },
     {
-      "word": "Estasi",
-      "meaning": "Stato di felicità intensa e rapimento",
-      "example": "Ero in estasi dopo averti visto."
+      "word": "Capzioso",
+      "meaning": "Detto di domanda o argomento che tende a ingannare, subdolo",
+      "example": "L'avvocato ha posto una domanda capziosa al testimone."
     },
     {
-      "word": "Fugace",
-      "meaning": "Che passa velocemente, di breve durata",
-      "example": "È stato un momento fugace ma bellissimo."
+      "word": "Suffragare",
+      "meaning": "Convalidare, sostenere con prove o argomenti (una tesi, un'ipotesi)",
+      "example": "I dati raccolti sembrano suffragare la nostra teoria."
     },
     {
-      "word": "Abbracciare",
-      "meaning": "Stringere qualcuno tra le braccia in segno di affetto",
-      "example": "Non vedo l'ora di poterti abbracciare."
+      "word": "Disamina",
+      "meaning": "Analisi attenta e minuziosa, esame critico",
+      "example": "L'articolo offre una disamina approfondita del problema."
     },
     {
-      "word": "Sognare",
-      "meaning": "Immaginare mentre si dorme o fantasticare da svegli",
-      "example": "Sogno sempre te."
+      "word": "Apologia",
+      "meaning": "Discorso o scritto in difesa o elogio di qualcuno o qualcosa",
+      "example": "Lo scrittore fece un'apologia della libertà di pensiero."
     },
     {
-      "word": "Innamorato",
-      "meaning": "Chi prova amore romantico per qualcuno",
-      "example": "Sono completamente innamorato di te."
+      "word": "Eufemismo",
+      "meaning": "Espressione attenuata usata per sostituirne una più cruda o sgradevole",
+      "example": "Usare 'passare a miglior vita' è un eufemismo per 'morire'."
     },
     {
-      "word": "Desiderio",
-      "meaning": "Voglia intensa di avere o fare qualcosa",
-      "example": "Ho un grande desiderio di stare con te."
+      "word": "Procrastinare",
+      "meaning": "Rimandare al giorno dopo, rinviare continuamente",
+      "example": "Ha la cattiva abitudine di procrastinare le decisioni importanti."
     },
     {
-      "word": "Passione",
-      "meaning": "Forte emozione, entusiasmo intenso",
-      "example": "La nostra passione brucia come un fuoco."
+      "word": "Retaggio",
+      "meaning": "Eredità morale, culturale o spirituale del passato",
+      "example": "La nostra lingua è un retaggio della cultura latina."
     },
     {
-      "word": "Adorare",
-      "meaning": "Amare intensamente, venerare",
-      "example": "Ti adoro più di ogni cosa al mondo."
+      "word": "Vicissitudine",
+      "meaning": "Alternanza di eventi, cambiamento di situazioni (spesso al plurale, 'vicissitudini', per indicare difficoltà)",
+      "example": "Nonostante le molteplici vicissitudini, non ha mai perso la speranza."
     },
     {
-      "word": "Felicità",
-      "meaning": "Stato di piena soddisfazione e gioia",
-      "example": "Con te ho trovato la vera felicità."
+      "word": "Qui pro quo",
+      "meaning": "Equivoco, malinteso, scambio di una persona o cosa per un'altra",
+      "example": "C'è stato un qui pro quo sulla data dell'incontro."
     },
     {
-      "word": "Splendore",
-      "meaning": "Grande bellezza e luminosità",
-      "example": "Il tuo sorriso ha lo splendore del sole."
+      "word": "Obnubilare",
+      "meaning": "Offuscare, annebbiare (specialmente la mente o la ragione)",
+      "example": "La rabbia gli stava obnubilando il giudizio."
     },
     {
-      "word": "Prezioso",
-      "meaning": "Di grande valore, importante",
-      "example": "Ogni momento con te è prezioso."
+      "word": "Farraginoso",
+      "meaning": "Confuso, disordinato, appesantito da elementi inutili",
+      "example": "Il sistema burocratico è spesso lento e farraginoso."
     },
     {
-      "word": "Radiante",
-      "meaning": "Luminoso, che emana luce o gioia",
-      "example": "Sei radiante quando sorridi."
+      "word": "Pedante",
+      "meaning": "Chi fa sfoggio di erudizione in modo noioso e pignolo",
+      "example": "Il professore era così pedante da correggere ogni minima imprecisione."
+    },
+    {
+      "word": "Divellere",
+      "meaning": "Sradicare, strappare via con forza",
+      "example": "Hanno dovuto divellere le vecchie fondamenta."
+    },
+    {
+      "word": "Sviscerare",
+      "meaning": "Analizzare a fondo, esaminare in ogni minimo dettaglio",
+      "example": "Durante il dibattito, abbiamo sviscerato la questione."
+    },
+    {
+      "word": "Biasimare",
+      "meaning": "Esprimere disapprovazione o condanna morale, criticare",
+      "example": "Non ti biasimo per aver preso quella decisione."
+    },
+    {
+      "word": "Redarguire",
+      "meaning": "Rimproverare aspramente, ammonire con severità",
+      "example": "L'insegnante redarguì l'alunno per la sua maleducazione."
+    },
+    {
+      "word": "Troneggiare",
+      "meaning": "Stare in posizione elevata e dominante, come su un trono",
+      "example": "Il castello troneggia sulla collina."
+    },
+    {
+      "word": "Glosare",
+      "meaning": "Commentare, interpretare; o tralasciare, sorvolare su un argomento",
+      "example": "Preferì glosare su quell'episodio imbarazzante."
+    },
+    {
+      "word": "Ostracizzare",
+      "meaning": "Escludere qualcuno da un gruppo o da una comunità, emarginare",
+      "example": "Fu ostracizzato dai colleghi dopo aver rivelato la verità."
+    },
+    {
+      "word": "Borbottare",
+      "meaning": "Parlare a voce bassa e indistinta, lamentandosi o brontolando",
+      "example": "Se ne andò borbottando qualcosa tra i denti."
+    },
+    {
+      "word": "Mugugnare",
+      "meaning": "Lamentarsi a bassa voce, esprimere scontento in modo non palese",
+      "example": "Il dipendente mugugnava per il troppo lavoro."
+    },
+    {
+      "word": "Chiosare",
+      "meaning": "Fare una chiosa, un breve commento o postilla a un testo",
+      "example": "Il critico ha chiosato il passaggio più controverso del romanzo."
+    },
+    {
+      "word": "Postillare",
+      "meaning": "Aggiungere postille, note a margine di uno scritto",
+      "example": "Amava leggere postillando i suoi libri preferiti."
+    },
+    {
+      "word": "Elucubrazione",
+      "meaning": "Riflessione faticosa e complicata, spesso astrusa o cervellotica",
+      "example": "Le sue elucubrazioni filosofiche erano difficili da seguire."
+    },
+    {
+      "word": "Rimuginare",
+      "meaning": "Pensare e ripensare insistentemente a qualcosa, specialmente a fatti negativi",
+      "example": "Passa le notti a rimuginare sui suoi errori."
+    },
+    {
+      "word": "Ponderare",
+      "meaning": "Valutare attentamente, soppesare con la mente",
+      "example": "Bisogna ponderare bene i pro e i contro prima di agire."
+    },
+    {
+      "word": "Divagare",
+      "meaning": "Allontanarsi dall'argomento principale, perdere il filo del discorso",
+      "example": "Il relatore ha iniziato a divagare, parlando della sua infanzia."
+    },
+    {
+      "word": "Rutilante",
+      "meaning": "Che brilla intensamente, di un rosso splendente",
+      "example": "Indossava un abito rutilante di paillettes."
+    },
+    {
+      "word": "Corrusco",
+      "meaning": "Che lampeggia, scintillante (spesso di armi o sguardi minacciosi)",
+      "example": "Il cielo era corrusco, preannunciando un temporale."
+    },
+    {
+      "word": "Sfavillante",
+      "meaning": "Che emana una luce vivissima e scintillante",
+      "example": "Portava al dito un anello sfavillante."
+    },
+    {
+      "word": "Lancinante",
+      "meaning": "Dolore acuto, che sembra penetrare come una lancia",
+      "example": "Avvertì un dolore lancinante alla schiena."
+    },
+    {
+      "word": "Pugnace",
+      "meaning": "Combattivo, bellicoso, che ama la lotta",
+      "example": "Ha un carattere pugnace e non si arrende mai."
+    },
+    {
+      "word": "Arguto",
+      "meaning": "Ingegnoso, acuto, spiritoso in modo intelligente",
+      "example": "Ha fatto un'osservazione molto arguta."
+    },
+    {
+      "word": "Faceto",
+      "meaning": "Che ama scherzare, spiritoso ma in modo leggero e talvolta non opportuno",
+      "example": "Il suo tono faceto non era appropriato alla gravità della situazione."
+    },
+    {
+      "word": "Mellifluo",
+      "meaning": "Dolce come il miele, ma spesso in modo affettato o ingannevole",
+      "example": "Cercava di convincerla con parole melliflue."
+    },
+    {
+      "word": "Pervicace",
+      "meaning": "Testardo in modo ostinato, tenace (spesso in senso negativo)",
+      "example": "Dimostrò una pervicace determinazione nel perseguire il suo folle piano."
+    },
+    {
+      "word": "Laconico",
+      "meaning": "Breve, conciso, che si esprime con pochissime parole",
+      "example": "La sua risposta fu laconica: 'No'."
+    },
+    {
+      "word": "Sicofante",
+      "meaning": "Calunniatore, delatore, chi accusa falsamente per trarne vantaggio",
+      "example": "Si rivelò un sicofante, pronto a tradire gli amici per potere."
+    },
+    {
+      "word": "Logorroico",
+      "meaning": "Che parla eccessivamente, in modo incontenibile",
+      "example": "Il conferenziere era logorroico e ha sforato tutti i tempi."
+    },
+    {
+      "word": "Ampolloso",
+      "meaning": "Stile o discorso gonfio, retorico, pieno di parole altisonanti ma vuote",
+      "example": "Il politico tenne un discorso ampolloso e privo di contenuti."
+    },
+    {
+      "word": "Accidia",
+      "meaning": "Pigrizia morale, inerzia, noia e indifferenza verso il bene",
+      "example": "L'accidia lo portava a trascorrere le giornate senza fare nulla."
+    },
+    {
+      "word": "Trepidazione",
+      "meaning": "Stato di ansia, di attesa timorosa e impaziente",
+      "example": "Aspettava con trepidazione l'esito dell'esame."
+    },
+    {
+      "word": "Affanno",
+      "meaning": "Respirazione faticosa; ansia, preoccupazione angosciosa",
+      "example": "Salì le scale con affanno."
+    },
+    {
+      "word": "Pudore",
+      "meaning": "Senso di vergogna e riservatezza riguardo alla sfera intima",
+      "example": "Arrossì per pudore."
+    },
+    {
+      "word": "Ritrosia",
+      "meaning": "Riluttanza, esitazione a fare qualcosa, spesso per timidezza o pudore",
+      "example": "Accettò l'invito con una certa ritrosia."
+    },
+    {
+      "word": "Fasto",
+      "meaning": "Lusso ostentato, sfarzo, magnificenza",
+      "example": "La cerimonia si svolse con grande fasto."
+    },
+    {
+      "word": "Sfarzo",
+      "meaning": "Lusso eccessivo e vistoso, pompa",
+      "example": "Vivevano in uno sfarzo che contrastava con la povertà circostante."
+    },
+    {
+      "word": "Ginepraio",
+      "meaning": "Situazione confusa, intricata e piena di difficoltà",
+      "example": "Si è cacciato in un ginepraio da cui sarà difficile uscire."
+    },
+    {
+      "word": "Suggello",
+      "meaning": "Sigillo; atto o parola che conclude e conferma qualcosa",
+      "example": "La firma pose il suggello sull'accordo."
+    },
+    {
+      "word": "Resipiscenza",
+      "meaning": "Riconoscimento del proprio errore, pentimento",
+      "example": "Dopo il disastro, mostrò segni di resipiscenza."
+    },
+    {
+      "word": "Aberrazione",
+      "meaning": "Deviazione dalla norma, dall'equilibrio mentale o morale",
+      "example": "Quell'atto crudele fu un momento di pura aberrazione."
+    },
+    {
+      "word": "Abiurare",
+      "meaning": "Rinnegare solennemente la propria fede o un'idea",
+      "example": "Fu costretto ad abiurare le sue teorie considerate eretiche."
+    },
+    {
+      "word": "Abnegazione",
+      "meaning": "Rinuncia totale al proprio interesse per dedicarsi agli altri",
+      "example": "Ha curato i malati con ammirevole abnegazione."
+    },
+    {
+      "word": "Aborrire",
+      "meaning": "Provare orrore, detestare profondamente",
+      "example": "Aborrisco ogni forma di violenza."
+    },
+    {
+      "word": "Abulico",
+      "meaning": "Privo di volontà, apatico, incapace di prendere decisioni",
+      "example": "Era diventato abulico, indifferente a tutto."
+    },
+    {
+      "word": "Acerrimo",
+      "meaning": "Molto aspro; (di nemico) implacabile, irriducibile",
+      "example": "I due erano diventati nemici acerrimi."
+    },
+    {
+      "word": "Acume",
+      "meaning": "Prontezza e acutezza di ingegno",
+      "example": "Risolse l'enigma grazie al suo acume."
+    },
+    {
+      "word": "Adagio",
+      "meaning": "Lentamente; o anche 'proverbio, massima'",
+      "example": "Come dice l'adagio, 'chi la dura la vince'."
+    },
+    {
+      "word": "Adulazione",
+      "meaning": "Lode eccessiva e interessata, piaggeria",
+      "example": "Il re era circondato dall'adulazione dei suoi cortigiani."
+    },
+    {
+      "word": "Afflato",
+      "meaning": "Ispirazione poetica o divina, soffio vitale",
+      "example": "Il poeta componeva mosso da un afflato improvviso."
+    },
+    {
+      "word": "Affranto",
+      "meaning": "Profondamente abbattuto, prostrato dal dolore",
+      "example": "Era affranto per la perdita dell'amico."
+    },
+    {
+      "word": "Aforisma",
+      "meaning": "Breve massima che esprime una verità o un principio",
+      "example": "I suoi discorsi erano pieni di aforismi e citazioni."
+    },
+    {
+      "word": "Aggraziato",
+      "meaning": "Che ha grazia nei modi o nelle forme, elegante",
+      "example": "I suoi movimenti erano aggraziati e leggeri."
+    },
+    {
+      "word": "Agnostico",
+      "meaning": "Chi sospende il giudizio sull'esistenza di Dio, non potendola provare",
+      "example": "Si definiva agnostico, non ateo."
+    },
+    {
+      "word": "Aleatorio",
+      "meaning": "Affidato al caso, incerto, rischioso",
+      "example": "L'esito di quell'investimento è altamente aleatorio."
+    },
+    {
+      "word": "Alienare",
+      "meaning": "Allontanare, rendere estraneo; o vendere, cedere una proprietà",
+      "example": "Il suo comportamento arrogante gli alienò le simpatie di tutti."
+    },
+    {
+      "word": "Altezzoso",
+      "meaning": "Superbo, arrogante, che si sente superiore agli altri",
+      "example": "Ci rispose con un tono altezzoso e sprezzante."
+    },
+    {
+      "word": "Amletico",
+      "meaning": "Pieno di dubbi, irresoluto, tormentato dall'incertezza",
+      "example": "Viveva un dilemma amletico sul suo futuro."
+    },
+    {
+      "word": "Anacronistico",
+      "meaning": "Che è fuori dal proprio tempo, superato, non attuale",
+      "example": "Utilizzare oggi quella tecnologia è anacronistico."
+    },
+    {
+      "word": "Anelito",
+      "meaning": "Respiro affannoso; desiderio intenso, brama",
+      "example": "Il suo più grande anelito era la libertà."
+    },
+    {
+      "word": "Annaspa",
+      "meaning": "Muoversi confusamente con mani e braccia; o essere in difficoltà",
+      "example": "Senza preparazione, annaspava nel rispondere alle domande."
+    },
+    {
+      "word": "Annichilire",
+      "meaning": "Distruggere completamente, ridurre al nulla; umiliare profondamente",
+      "example": "La notizia lo annichilì, lasciandolo senza parole."
+    },
+    {
+      "word": "Antitesi",
+      "meaning": "Contrapposizione netta tra due idee o concetti",
+      "example": "Lui è l'antitesi di tutto ciò in cui credo."
+    },
+    {
+      "word": "Apatico",
+      "meaning": "Indifferente, privo di interesse e reazioni emotive",
+      "example": "La malattia lo aveva reso apatico e svogliato."
+    },
+    {
+      "word": "Apocrifo",
+      "meaning": "Di un'opera, che non è autentica, falsamente attribuita a un autore",
+      "example": "Il museo ha scoperto che il dipinto era un apocrifo."
+    },
+    {
+      "word": "Apodittico",
+      "meaning": "Incontrovertibile, che si impone come verità evidente e necessaria",
+      "example": "Ha espresso il suo giudizio con tono apodittico."
+    },
+    {
+      "word": "Arcano",
+      "meaning": "Misterioso, segreto, incomprensibile",
+      "example": "I sacerdoti custodivano gli arcani misteri del culto."
+    },
+    {
+      "word": "Archetipo",
+      "meaning": "Modello originario, esemplare primo di una serie",
+      "example": "Ulisse è l'archetipo dell'eroe viaggiatore."
+    },
+    {
+      "word": "Ardito",
+      "meaning": "Coraggioso, audace, che osa",
+      "example": "Fece una proposta ardita che sorprese tutti."
+    },
+    {
+      "word": "Arduo",
+      "meaning": "Molto difficile, faticoso da superare",
+      "example": "Scalare quella montagna è un'impresa ardua."
+    },
+    {
+      "word": "Argomentare",
+      "meaning": "Sostenere con ragionamenti e prove una tesi",
+      "example": "Devi imparare ad argomentare meglio le tue opinioni."
+    },
+    {
+      "word": "Arroganza",
+      "meaning": "Atteggiamento di superbia e insolenza",
+      "example": "La sua arroganza lo rende insopportabile."
+    },
+    {
+      "word": "Ascetico",
+      "meaning": "Relativo all'ascetismo, che pratica la rinuncia ai piaceri terreni",
+      "example": "Conduceva una vita ascetica, dedicata alla meditazione."
+    },
+    {
+      "word": "Assecondare",
+      "meaning": "Favorire, appoggiare le volontà o le inclinazioni altrui",
+      "example": "Decise di assecondare il desiderio del figlio."
+    },
+    {
+      "word": "Assertivo",
+      "meaning": "Capace di affermare i propri diritti e le proprie opinioni con sicurezza",
+      "example": "Un buon leader deve essere assertivo, ma non aggressivo."
+    },
+    {
+      "word": "Assiduo",
+      "meaning": "Costante, perseverante, che non manca mai",
+      "example": "Era un frequentatore assiduo della biblioteca."
+    },
+    {
+      "word": "Atavico",
+      "meaning": "Che deriva da antenati remoti, ancestrale",
+      "example": "Provava una paura atavica del buio."
+    },
+    {
+      "word": "Attonito",
+      "meaning": "Profondamente stupito, sbalordito",
+      "example": "Rimase attonito di fronte a quello spettacolo."
+    },
+    {
+      "word": "Atroce",
+      "meaning": "Estremamente crudele, orribile, che provoca grande sofferenza",
+      "example": "La guerra portò sofferenze atroci."
+    },
+    {
+      "word": "Attanagliare",
+      "meaning": "Afferrare con forza, come con una tenaglia; tormentare",
+      "example": "L'ansia cominciò ad attanagliarlo."
+    },
+    {
+      "word": "Attiguo",
+      "meaning": "Vicino, adiacente, confinante",
+      "example": "Le nostre stanze d'albergo erano attigue."
+    },
+    {
+      "word": "Auspicio",
+      "meaning": "Segno premonitore (buono o cattivo); augurio",
+      "example": "Lo considero un ottimo auspicio per il futuro."
+    },
+    {
+      "word": "Avallare",
+      "meaning": "Garantire, approvare, sostenere (un'idea, una richiesta)",
+      "example": "Il direttore ha avallato la mia proposta."
+    },
+    {
+      "word": "Avvezzo",
+      "meaning": "Abituato, assuefatto a qualcosa",
+      "example": "Non era avvezzo a quel tipo di lusso."
+    },
+    {
+      "word": "Avvilire",
+      "meaning": "Umiliare, deprimere, scoraggiare",
+      "example": "La sconfitta non deve avvilirci, ma spronarci a fare meglio."
+    },
+    {
+      "word": "Banalizzare",
+      "meaning": "Rendere banale, togliere importanza o originalità",
+      "example": "Non banalizzare il problema, è più serio di quanto pensi."
+    },
+    {
+      "word": "Barcamenarsi",
+      "meaning": "Destreggiarsi tra difficoltà e opinioni contrastanti, senza prendere posizioni nette",
+      "example": "In quella situazione difficile, riuscì a barcamenarsi."
+    },
+    {
+      "word": "Barlume",
+      "meaning": "Luce debole e incerta; traccia minima",
+      "example": "Non c'era nemmeno un barlume di speranza."
+    },
+    {
+      "word": "Biascicare",
+      "meaning": "Masticare lentamente e rumorosamente; o parlare in modo confuso",
+      "example": "Biascicava parole incomprensibili."
+    },
+    {
+      "word": "Bislacco",
+      "meaning": "Strambo, stravagante, bizzarro",
+      "example": "Aveva sempre delle idee bislacche e originali."
+    },
+    {
+      "word": "Blandire",
+      "meaning": "Accarezzare; adulare, lusingare per ottenere qualcosa",
+      "example": "Cercava di blandire il capo per ottenere una promozione."
+    },
+    {
+      "word": "Blasfemo",
+      "meaning": "Che costituisce una bestemmia, irriverente verso il sacro",
+      "example": "Le sue parole furono giudicate blasfeme."
+    },
+    {
+      "word": "Boria",
+      "meaning": "Arroganza, superbia vanitosa",
+      "example": "La sua boria lo rendeva antipatico a tutti."
+    },
+    {
+      "word": "Brancolare",
+      "meaning": "Cercare a tentoni, muoversi nell'incertezza",
+      "example": "Brancolava nel buio in cerca dell'interruttore."
+    },
+    {
+      "word": "Caduco",
+      "meaning": "Destinato a cadere, effimero, passeggero",
+      "example": "I beni terreni sono caduchi."
+    },
+    {
+      "word": "Caldeggiare",
+      "meaning": "Sostenere con calore e fervore, raccomandare vivamente",
+      "example": "Caldeggio la tua candidatura per quel ruolo."
+    },
+    {
+      "word": "Calunnia",
+      "meaning": "Falsa accusa, diffamazione consapevole",
+      "example": "Fu vittima di una vile calunnia."
+    },
+    {
+      "word": "Caparbio",
+      "meaning": "Ostinato, testardo, tenace",
+      "example": "Era caparbio nel voler raggiungere i suoi obiettivi."
+    },
+    {
+      "word": "Cardine",
+      "meaning": "Perno su cui gira una porta; punto fondamentale, principio essenziale",
+      "example": "Il rispetto reciproco è il cardine della nostra relazione."
+    },
+    {
+      "word": "Carisma",
+      "meaning": "Dono straordinario, fascino personale che permette di influenzare gli altri",
+      "example": "Quel leader politico aveva un grande carisma."
+    },
+    {
+      "word": "Carpire",
+      "meaning": "Ottenere con astuzia o inganno, rubare abilmente",
+      "example": "Riuscì a carpirgli un segreto."
+    },
+    {
+      "word": "Castigare",
+      "meaning": "Punire; (di stile) rendere più sobrio e controllato",
+      "example": "Il romanzo è scritto in uno stile castigato ed elegante."
+    },
+    {
+      "word": "Catartico",
+      "meaning": "Che produce catarsi, purificazione (specialmente dalle passioni)",
+      "example": "L'arte può avere un effetto catartico."
+    },
+    {
+      "word": "Caustico",
+      "meaning": "Che corrode; (di spirito) mordace, sarcastico",
+      "example": "Le sue battute caustiche ferivano spesso i presenti."
+    },
+    {
+      "word": "Cauto",
+      "meaning": "Prudente, attento a evitare pericoli o errori",
+      "example": "Bisogna essere cauti nel fare promesse."
+    },
+    {
+      "word": "Celere",
+      "meaning": "Veloce, rapido",
+      "example": "Chiediamo una risposta celere da parte dell'amministrazione."
+    },
+    {
+      "word": "Cianciare",
+      "meaning": "Parlare a vanvera, chiacchierare di cose futili",
+      "example": "Passano il tempo a cianciare invece di lavorare."
+    },
+    {
+      "word": "Cimento",
+      "meaning": "Prova difficile e rischiosa",
+      "example": "Affrontò il cimento con grande coraggio."
+    },
+    {
+      "word": "Cinico",
+      "meaning": "Che disprezza i valori e i sentimenti comuni, mostrando indifferenza e sarcasmo",
+      "example": "Il suo cinico realismo non lasciava spazio all'ottimismo."
+    },
+    {
+      "word": "Circospetto",
+      "meaning": "Diffidente, cauto, che si guarda intorno con sospetto",
+      "example": "Si muoveva circospetto nel territorio nemico."
+    },
+    {
+      "word": "Circuire",
+      "meaning": "Raggirare, ingannare con lusinghe e astuzia",
+      "example": "Ha circuito l'anziana signora per farsi nominare erede."
+    },
+    {
+      "word": "Coacervo",
+      "meaning": "Ammasso confuso, insieme disordinato di cose",
+      "example": "La sua mente era un coacervo di idee contraddittorie."
+    },
+    {
+      "word": "Coatto",
+      "meaning": "Forzato, imposto con la forza",
+      "example": "Fu sottoposto a domicilio coatto."
+    },
+    {
+      "word": "Coercizione",
+      "meaning": "L'atto di costringere qualcuno a fare qualcosa contro la sua volontà",
+      "example": "La coercizione fisica è una violazione dei diritti umani."
+    },
+    {
+      "word": "Cogente",
+      "meaning": "Che costringe, obbligatorio, che non ammette deroghe",
+      "example": "Ci sono norme cogenti che devono essere rispettate."
+    },
+    {
+      "word": "Cognizione",
+      "meaning": "Conoscenza, consapevolezza",
+      "example": "Non avevo piena cognizione della gravità della situazione."
+    },
+    {
+      "word": "Collusione",
+      "meaning": "Accordo segreto e fraudolento a danno di terzi",
+      "example": "L'indagine ha rivelato una collusione tra l'impresa e i politici."
+    },
+    {
+      "word": "Compiacente",
+      "meaning": "Che asseconda gli altri per debolezza o per ottenerne il favore",
+      "example": "Un atteggiamento compiacente non ti aiuterà a farti rispettare."
+    },
+    {
+      "word": "Compianto",
+      "meaning": "Rimpianto, che viene ricordato con dolore (spesso 'il compianto...')",
+      "example": "Il compianto direttore era una persona molto stimata."
+    },
+    {
+      "word": "Compulsivo",
+      "meaning": "Fatto per impulso irrefrenabile, non per libera scelta",
+      "example": "È un acquirente compulsivo."
+    },
+    {
+      "word": "Concatenazione",
+      "meaning": "Serie di fatti o idee strettamente legati tra loro",
+      "example": "Una sfortunata concatenazione di eventi ha portato al disastro."
+    },
+    {
+      "word": "Conciliare",
+      "meaning": "Mettere d'accordo, rendere compatibili cose diverse",
+      "example": "È difficile conciliare lavoro e vita privata."
+    },
+    {
+      "word": "Concitato",
+      "meaning": "Agitato, mosso da forte emozione, frenetico",
+      "example": "Parlava con tono concitato, gesticolando."
+    },
+    {
+      "word": "Condiscendente",
+      "meaning": "Che accondiscende facilmente, a volte con un senso di superiorità",
+      "example": "Mi ha dato il permesso con un sorriso condiscendente."
+    },
+    {
+      "word": "Congiuntura",
+      "meaning": "Situazione, circostanza (specialmente in senso economico)",
+      "example": "L'azienda sta attraversando una congiuntura economica sfavorevole."
+    },
+    {
+      "word": "Congruo",
+      "meaning": "Adeguato, proporzionato, sufficiente",
+      "example": "Abbiamo bisogno di un tempo congruo per completare il progetto."
+    },
+    {
+      "word": "Connaturato",
+      "meaning": "Innato, che fa parte della natura stessa di qualcosa o qualcuno",
+      "example": "Il desiderio di libertà è connaturato all'essere umano."
+    },
+    {
+      "word": "Connivente",
+      "meaning": "Che è complice, che finge di non vedere un atto illecito",
+      "example": "Il silenzio dei presenti li rese conniventi."
+    },
+    {
+      "word": "Consesso",
+      "meaning": "Riunione formale di persone autorevoli, assemblea",
+      "example": "Il professore parlò di fronte a un illustre consesso di accademici."
+    },
+    {
+      "word": "Consuetudine",
+      "meaning": "Abitudine, pratica abituale, usanza",
+      "example": "È mia consuetudine fare una passeggiata dopo cena."
+    },
+    {
+      "word": "Contemplare",
+      "meaning": "Osservare a lungo con ammirazione o rapimento; prendere in considerazione",
+      "example": "Dobbiamo contemplare tutte le possibilità."
+    },
+    {
+      "word": "Contingente",
+      "meaning": "Che può accadere o non accadere, accidentale; la situazione attuale",
+      "example": "Dobbiamo risolvere i problemi contingenti prima di pianificare il futuro."
+    },
+    {
+      "word": "Contrito",
+      "meaning": "Profondamente pentito per un errore commesso",
+      "example": "Dopo la sfuriata, tornò con aria contrita a chiedere scusa."
+    },
+    {
+      "word": "Contumace",
+      "meaning": "Chi non si presenta in giudizio pur essendo stato regolarmente citato",
+      "example": "L'imputato fu dichiarato contumace."
+    },
+    {
+      "word": "Conturbante",
+      "meaning": "Che turba profondamente, che provoca un'intensa emozione sensuale",
+      "example": "Indossava un profumo conturbante."
+    },
+    {
+      "word": "Convalida",
+      "meaning": "Atto che rende valido, conferma",
+      "example": "Serve la convalida del direttore per procedere."
+    },
+    {
+      "word": "Convenevole",
+      "meaning": "Atto o parola formale di cortesia (spesso al plurale)",
+      "example": "Dopo i convenevoli di rito, passarono a discutere di affari."
+    },
+    {
+      "word": "Cospicuo",
+      "meaning": "Notevole, ingente, di grande quantità",
+      "example": "Ha ereditato una cospicua fortuna."
+    },
+    {
+      "word": "Costernato",
+      "meaning": "Profondamente addolorato e stupito, sgomento",
+      "example": "Siamo costernati di fronte a tanta ingiustizia."
+    },
+    {
+      "word": "Crepuscolare",
+      "meaning": "Relativo al crepuscolo; malinconico, che esprime un senso di fine",
+      "example": "La poesia crepuscolare italiana ha toni dimessi e malinconici."
+    },
+    {
+      "word": "Criptico",
+      "meaning": "Nascosto, misterioso, di difficile interpretazione",
+      "example": "Mi ha lasciato un messaggio criptico che non riesco a decifrare."
+    },
+    {
+      "word": "Crivellare",
+      "meaning": "Forare in più punti, come con un crivello (setaccio)",
+      "example": "La sua auto fu crivellata di colpi."
+    },
+    {
+      "word": "Crogiolarsi",
+      "meaning": "Godere pigramente di un benessere fisico o spirituale",
+      "example": "Si crogiolava al sole sulla spiaggia."
+    },
+    {
+      "word": "Cupidigia",
+      "meaning": "Desiderio sfrenato di ricchezze, avidità",
+      "example": "La cupidigia lo portò alla rovina."
+    },
+    {
+      "word": "Dappocaggine",
+      "meaning": "Inettitudine, incapacità, mancanza di valore",
+      "example": "Dimostrò una totale dappocaggine nella gestione della crisi."
+    },
+    {
+      "word": "Debacle",
+      "meaning": "Crollo improvviso, disastro, sconfitta rovinosa",
+      "example": "Le elezioni si sono concluse con una debacle per il partito."
+    },
+    {
+      "word": "Decoro",
+      "meaning": "Dignità nell'aspetto e nel comportamento",
+      "example": "Anche nella povertà, manteneva un grande decoro."
+    },
+    {
+      "word": "Deferenza",
+      "meaning": "Rispetto ossequioso, condiscendenza",
+      "example": "Trattava gli anziani con grande deferenza."
+    },
+    {
+      "word": "Deflagrazione",
+      "meaning": "Esplosione violenta e improvvisa",
+      "example": "La deflagrazione ha distrutto l'edificio."
+    },
+    {
+      "word": "Deleterio",
+      "meaning": "Dannoso, nocivo, che ha effetti negativi",
+      "example": "Fumare ha effetti deleteri sulla salute."
+    },
+    {
+      "word": "Delirio",
+      "meaning": "Stato confusionale con allucinazioni; esaltazione, entusiasmo sfrenato",
+      "example": "La folla era in delirio per il concerto."
+    },
+    {
+      "word": "Demagogo",
+      "meaning": "Chi inganna il popolo con false promesse per ottenere il potere",
+      "example": "Il politico fu accusato di essere un demagogo."
+    },
+    {
+      "word": "Denigrare",
+      "meaning": "Offuscare la reputazione altrui, parlar male di qualcuno",
+      "example": "Cerca sempre di denigrare il lavoro dei suoi colleghi."
+    },
+    {
+      "word": "Deplorare",
+      "meaning": "Condannare fermamente, disapprovare con forza",
+      "example": "Deploriamo l'uso della violenza in ogni sua forma."
+    },
+    {
+      "word": "Deprecare",
+      "meaning": "Esprimere forte disapprovazione, scongiurare che qualcosa accada",
+      "example": "Depreco il tuo comportamento irresponsabile."
+    },
+    {
+      "word": "Derelitto",
+      "meaning": "Abbandonato, solo, in miseria",
+      "example": "Il cucciolo derelitto fu trovato sul ciglio della strada."
+    },
+    {
+      "word": "Derimere",
+      "meaning": "Risolvere una controversia, troncare una questione",
+      "example": "Il giudice fu chiamato a derimere la lite."
+    },
+    {
+      "word": "Derisorio",
+      "meaning": "Che esprime derisione; o talmente piccolo da essere ridicolo, irrisorio",
+      "example": "Fu venduto a un prezzo derisorio."
+    },
+    {
+      "word": "Deterrente",
+      "meaning": "Mezzo o motivo che scoraggia dal fare qualcosa",
+      "example": "La paura della pena funge da deterrente."
+    },
+    {
+      "word": "Detrattore",
+      "meaning": "Chi denigra, chi parla male di qualcuno per sminuirne i meriti",
+      "example": "Nonostante il successo, aveva molti detrattori."
+    },
+    {
+      "word": "Diabolico",
+      "meaning": "Proprio del diavolo; malvagio, astuto, perverso",
+      "example": "Ha escogitato un piano diabolico."
+    },
+    {
+      "word": "Diafano",
+      "meaning": "Trasparente, che lascia passare la luce ma non permette di vedere distintamente",
+      "example": "La sua pelle era diafana e pallida."
+    },
+    {
+      "word": "Diatriba",
+      "meaning": "Polemica violenta e astiosa, discussione accesa",
+      "example": "I due intellettuali si lanciarono in una lunga diatriba sulla stampa."
+    },
+    {
+      "word": "Diffidente",
+      "meaning": "Che non si fida, sospettoso",
+      "example": "È diventato diffidente dopo essere stato ingannato."
+    },
+    {
+      "word": "Digressione",
+      "meaning": "Allontanamento dall'argomento principale in un discorso o scritto",
+      "example": "Torniamo a noi, dopo questa breve digressione."
+    },
+    {
+      "word": "Dileggiare",
+      "meaning": "Schernire, deridere pesantemente, beffare",
+      "example": "Fu dileggiato dai compagni per il suo errore."
+    },
+    {
+      "word": "Dileggio",
+      "meaning": "Atto di derisione, beffa",
+      "example": "Le sue parole erano piene di dileggio."
+    },
+    {
+      "word": "Dilettante",
+      "meaning": "Chi pratica un'arte o un'attività per diletto, non per professione",
+      "example": "È un musicista dilettante, ma molto bravo."
+    },
+    {
+      "word": "Diligenza",
+      "meaning": "Cura scrupolosa, impegno costante nel fare qualcosa",
+      "example": "Svolge il suo lavoro con grande diligenza."
+    },
+    {
+      "word": "Dirimere",
+      "meaning": "Vedi 'Derimere', risolvere una questione",
+      "example": "Il dibattito fu dirimente per la decisione finale."
+    },
+    {
+      "word": "Disamina",
+      "meaning": "Esame attento e critico, analisi",
+      "example": "L'articolo presenta una disamina accurata del fenomeno."
+    },
+    {
+      "word": "Disatteso",
+      "meaning": "Non rispettato, trascurato (di impegno, promessa)",
+      "example": "Le sue aspettative sono state completamente disattese."
+    },
+    {
+      "word": "Discernere",
+      "meaning": "Distinguere, riconoscere con chiarezza intellettuale",
+      "example": "È difficile discernere il vero dal falso in questa storia."
+    },
+    {
+      "word": "Discostare",
+      "meaning": "Allontanare, allontanarsi",
+      "example": "Non dovremmo discostarci dal piano originale."
+    },
+    {
+      "word": "Discrepanza",
+      "meaning": "Differenza, divario, contrasto",
+      "example": "C'è una notevole discrepanza tra le due versioni dei fatti."
+    },
+    {
+      "word": "Disquisizione",
+      "meaning": "Trattazione approfondita e dotta su un argomento",
+      "example": "Ha tenuto una lunga disquisizione sulla filosofia kantiana."
+    },
+    {
+      "word": "Dissacrare",
+      "meaning": "Privare del carattere sacro, trattare senza rispetto ciò che è venerato",
+      "example": "L'artista è stato accusato di dissacrare i simboli religiosi."
+    },
+    {
+      "word": "Dissapore",
+      "meaning": "Contrasto, disaccordo, lieve inimicizia",
+      "example": "C'è stato un piccolo dissapore tra di loro, ma hanno fatto pace."
+    },
+    {
+      "word": "Dissenso",
+      "meaning": "Parere contrario, disaccordo",
+      "example": "Ho espresso il mio dissenso riguardo alla nuova proposta."
+    },
+    {
+      "word": "Dissertazione",
+      "meaning": "Trattazione accademica, tesi di dottorato",
+      "example": "Sta scrivendo la sua dissertazione sulla letteratura medievale."
+    },
+    {
+      "word": "Dissimulare",
+      "meaning": "Nascondere i propri sentimenti o intenzioni, fingere",
+      "example": "Cercava di dissimulare il suo nervosismo con un sorriso."
+    },
+    {
+      "word": "Dissoluto",
+      "meaning": "Che vive una vita sregolata e dedita ai piaceri, licenzioso",
+      "example": "Conduceva un'esistenza dissoluta."
+    },
+    {
+      "word": "Dissonanza",
+      "meaning": "Mancanza di accordo (in musica o tra idee), discordanza",
+      "example": "Le sue azioni sono in netta dissonanza con le sue parole."
+    },
+    {
+      "word": "Distopico",
+      "meaning": "Relativo a una distopia, una società futura negativa e indesiderabile",
+      "example": "Molti romanzi di fantascienza descrivono un futuro distopico."
+    },
+    {
+      "word": "Divagare",
+      "meaning": "Allontanarsi dall'argomento, perdere il filo",
+      "example": "Il professore tende a divagare durante le sue lezioni."
+    },
+    {
+      "word": "Divincolarsi",
+      "meaning": "Liberarsi da una presa o da un legame dimenandosi",
+      "example": "Il ladro cercò di divincolarsi dalla presa del poliziotto."
+    },
+    {
+      "word": "Duttile",
+      "meaning": "Che si può lavorare e ridurre in fili sottili; (fig.) flessibile, adattabile",
+      "example": "Ha un carattere duttile e si adatta facilmente ai cambiamenti."
+    },
+    {
+      "word": "Ebetudine",
+      "meaning": "Stato di ottusità mentale, stupidità",
+      "example": "Lo guardava con un'espressione di completa ebetudine."
+    },
+    {
+      "word": "Eburneo",
+      "meaning": "Del colore e della consistenza dell'avorio, bianco pallido",
+      "example": "La sua carnagione eburnea risaltava contro l'abito scuro."
+    },
+    {
+      "word": "Eccentrico",
+      "meaning": "Stravagante, bizzarro, fuori dal comune",
+      "example": "Si veste sempre in modo eccentrico."
+    },
+    {
+      "word": "Eclettico",
+      "meaning": "Che trae ispirazione da stili e idee diverse, versatile",
+      "example": "È un artista eclettico, che spazia dalla pittura alla musica."
+    },
+    {
+      "word": "Edulcorare",
+      "meaning": "Addolcire; (fig.) attenuare la durezza o la crudezza di qualcosa",
+      "example": "Hanno edulcorato la realtà dei fatti per non spaventare il pubblico."
+    },
+    {
+      "word": "Egemonia",
+      "meaning": "Supremazia, dominio politico, economico o culturale di uno stato su altri",
+      "example": "L'antica Roma esercitò la sua egemonia su tutto il Mediterraneo."
+    },
+    {
+      "word": "Egro",
+      "meaning": "Malato, infermo (termine letterario)",
+      "example": "Il poeta, ormai egro, si ritirò in campagna."
+    },
+    {
+      "word": "Elegiaca",
+      "meaning": "Malinconico, triste, come in un'elegia",
+      "example": "La poesia ha un tono elegiaco."
+    },
+    {
+      "word": "Elitario",
+      "meaning": "Riservato a un'élite, a una minoranza privilegiata",
+      "example": "È un club molto elitario."
+    },
+    {
+      "word": "Elucubrazione",
+      "meaning": "Riflessione complessa e faticosa, spesso astrusa",
+      "example": "Dopo lunghe elucubrazioni, giunse a una conclusione."
+    },
+    {
+      "word": "Eludere",
+      "meaning": "Evitare con astuzia, sottrarsi (a una domanda, a una legge)",
+      "example": "Riuscì a eludere la sorveglianza."
+    },
+    {
+      "word": "Emancipare",
+      "meaning": "Liberare da una condizione di dipendenza o soggezione",
+      "example": "Lottarono per emanciparsi dal controllo dei genitori."
+    },
+    {
+      "word": "Emblema",
+      "meaning": "Simbolo, figura o immagine che rappresenta un concetto",
+      "example": "La colomba è l'emblema della pace."
+    },
+    {
+      "word": "Empasse",
+      "meaning": "Situazione di stallo, punto morto in una trattativa",
+      "example": "I negoziati sono in una fase di empasse."
+    },
+    {
+      "word": "Empirico",
+      "meaning": "Basato sull'esperienza e sull'osservazione diretta, non sulla teoria",
+      "example": "Abbiamo raccolto dati empirici a sostegno della tesi."
+    },
+    {
+      "word": "Emulare",
+      "meaning": "Cercare di imitare o superare qualcuno in meriti e qualità",
+      "example": "Cerca di emulare il suo fratello maggiore."
+    },
+    {
+      "word": "Encomio",
+      "meaning": "Lode solenne, elogio pubblico",
+      "example": "Ha ricevuto un encomio per il suo atto di coraggio."
+    },
+    {
+      "word": "Endemico",
+      "meaning": "Tipico ed esclusivo di una determinata zona o popolazione",
+      "example": "Quella malattia è endemica in alcune regioni tropicali."
+    },
+    {
+      "word": "Enfasi",
+      "meaning": "Eccessiva accentuazione del tono o delle parole per dare risalto",
+      "example": "Parlava con enfasi per convincere l'uditorio."
+    },
+    {
+      "word": "Enigmatico",
+      "meaning": "Misterioso, di difficile comprensione, ambiguo",
+      "example": "Il suo sorriso enigmatico la lasciava perplessa."
+    },
+    {
+      "word": "Enunciare",
+      "meaning": "Esprimere, dichiarare in modo chiaro e formale",
+      "example": "Il professore si appresta a enunciare il teorema."
+    },
+    {
+      "word": "Ephemeral",
+      "meaning": "Vedi 'Effimero', di brevissima durata",
+      "example": "La sua gioia fu ephemera (raro, si usa più 'effimera')."
+    },
+    {
+      "word": "Epigono",
+      "meaning": "Imitatore, seguace di un maestro, spesso privo di originalità",
+      "example": "Era considerato un semplice epigono del grande pittore."
+    },
+    {
+      "word": "Epilogo",
+      "meaning": "Parte conclusiva di un'opera letteraria; conclusione di una vicenda",
+      "example": "La vicenda ebbe un epilogo inaspettato."
+    },
+    {
+      "word": "Epistassi",
+      "meaning": "Fuoriuscita di sangue dal naso, sangue dal naso",
+      "example": "Il caldo eccessivo può provocare epistassi."
+    },
+    {
+      "word": "Epitome",
+      "meaning": "Compendio, riassunto efficace; la personificazione di una qualità",
+      "example": "Quel libro è l'epitome del pensiero romantico."
+    },
+    {
+      "word": "Equanime",
+      "meaning": "Imparziale, sereno nel giudizio, equilibrato",
+      "example": "Un giudice deve essere sempre equanime."
+    },
+    {
+      "word": "Equivoco",
+      "meaning": "Malinteso; qualcosa che può essere interpretato in più modi",
+      "example": "Le sue parole hanno generato un fastidioso equivoco."
+    },
+    {
+      "word": "Ergastolo",
+      "meaning": "Pena detentiva a vita",
+      "example": "Fu condannato all'ergastolo per omicidio."
+    },
+    {
+      "word": "Ergere",
+      "meaning": "Innalzare, sollevare; (ergersi) assumere un atteggiamento di superiorità",
+      "example": "Si ergeva a giudice del comportamento altrui."
+    },
+    {
+      "word": "Ermetico",
+      "meaning": "Chiuso; (di stile) oscuro, di difficile comprensione",
+      "example": "La sua poesia è ermetica e complessa."
+    },
+    {
+      "word": "Eroico",
+      "meaning": "Da eroe, che dimostra coraggio e valore straordinari",
+      "example": "Ha compiuto un gesto eroico salvando il bambino."
+    },
+    {
+      "word": "Erudito",
+      "meaning": "Persona di vasta e profonda dottrina",
+      "example": "L'erudito consultò antichi manoscritti."
+    },
+    {
+      "word": "Esacerbare",
+      "meaning": "Rendere più acuto o intenso un dolore o un sentimento negativo",
+      "example": "Le sue parole servirono solo a esacerbare gli animi."
+    },
+    {
+      "word": "Esaustivo",
+      "meaning": "Completo, che esaurisce l'argomento",
+      "example": "Mi ha fornito una spiegazione esaustiva."
     }
   ]
 }
+
