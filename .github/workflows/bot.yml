@@ -2,15 +2,15 @@ name: Italian Word Bot
 on:
   schedule:
     # Word of the day at 8:15 PM Italian time (19:15 UTC in winter, 18:15 UTC in summer)
-    - cron: '25 20 * * *'
+    - cron: '35 19 * * *'
     # Evening quiz at 8:30 PM Italian time (19:30 UTC in winter, 18:30 UTC in summer)
-    - cron: '45 20 * * *'
+    - cron: '45 19 * * *'
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
   send-word:
     runs-on: ubuntu-latest
-    if: github.event.schedule == '25 20 * * *' || github.event_name == 'workflow_dispatch'
+    if: github.event.schedule == '35 19 * * *' || github.event_name == 'workflow_dispatch'
     
     steps:
     - name: Checkout code
@@ -40,7 +40,7 @@ jobs:
 
   send-quiz:
     runs-on: ubuntu-latest
-    if: github.event.schedule == '45 20 * * *' || github.event_name == 'workflow_dispatch'
+    if: github.event.schedule == '45 19 * * *' || github.event_name == 'workflow_dispatch'
     
     steps:
     - name: Checkout code
