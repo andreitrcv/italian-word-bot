@@ -1,69 +1,70 @@
 name: Italian Word Bot
+
 on:
   schedule:
-    # Word of the day at 8:15 PM Italian time (19:15 UTC in winter, 18:15 UTC in summer)
+    # Word of the day at 8:35 PM Italian time (19:35 UTC in winter, 18:35 UTC in summer)
     - cron: '35 19 * * *'
-    # Evening quiz at 8:30 PM Italian time (19:30 UTC in winter, 18:30 UTC in summer)
+    # Evening quiz at 8:45 PM Italian time (19:45 UTC in winter, 18:45 UTC in summer)
     - cron: '45 19 * * *'
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
   send-word:
+    name: Send Word of the Day
     runs-on: ubuntu-latest
-    if: github.event.schedule == '35 19 * * *' || github.event_name == 'workflow_dispatch'
-    
+
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-    
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-    
-    - name: Install dependencies
-      run: |
-        pip install python-telegram-bot==21.0 pytz==2024.1
-    
-    - name: Send morning message
-      env:
-        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-        CHAT_ID: ${{ secrets.CHAT_ID }}
-      run: |
-        python -c "
-        import asyncio
-        import os
-        from italian_word_bot import ItalianWordBot
-        bot = ItalianWordBot()
-        asyncio.run(bot.send_morning_message())
-        "
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install python-telegram-bot==21.0 pytz==2024.1
+
+      - name: Send Word of the Day
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+        run: |
+          python -c "
+          import asyncio
+          import os
+          from italian_word_bot import ItalianWordBot
+          bot = ItalianWordBot()
+          asyncio.run(bot.send_morning_message())
+          "
 
   send-quiz:
+    name: Send Evening Quiz
     runs-on: ubuntu-latest
-    if: github.event.schedule == '45 19 * * *' || github.event_name == 'workflow_dispatch'
-    
+
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-    
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-    
-    - name: Install dependencies
-      run: |
-        pip install python-telegram-bot==21.0 pytz==2024.1
-    
-    - name: Send evening quiz
-      env:
-        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-        CHAT_ID: ${{ secrets.CHAT_ID }}
-      run: |
-        python -c "
-        import asyncio
-        import os
-        from italian_word_bot import ItalianWordBot
-        bot = ItalianWordBot()
-        asyncio.run(bot.send_evening_quiz())
-        "
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install python-telegram-bot==21.0 pytz==2024.1
+
+      - name: Send Evening Quiz
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+        run: |
+          python -c "
+          import asyncio
+          import os
+          from italian_word_bot import ItalianWordBot
+          bot = ItalianWordBot()
+          asyncio.run(bot.send_evening_quiz())
+          "
