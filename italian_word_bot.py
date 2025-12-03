@@ -78,7 +78,8 @@ class ItalianWordBot:
         self.current_word = word_data
         
         message = f"🌅 *Parola del Giorno* 🌅\n\n"
-        message += f"📖 *{word_data['word']}*\n\n"
+        message += f"🇮🇹 *{word_data['word']}*\n"
+        message += f"🇺🇦 *{word_data['ukrainian']}*\n\n"
         message += f"*Significato:*\n{word_data['meaning']}\n\n"
         
         if 'example' in word_data:
@@ -92,7 +93,7 @@ class ItalianWordBot:
         
         self.morning_message_id = sent_message.message_id
         self.save_state()
-        print(f"Morning message sent: {word_data['word']}")
+        print(f"Morning message sent: {word_data['word']} ({word_data['ukrainian']})")
     
     async def send_evening_quiz(self):
         """Delete meaning and send quiz at 8:30 PM"""
@@ -113,7 +114,8 @@ class ItalianWordBot:
         
         quiz_message = f"🌙 *Quiz della Sera* 🌙\n\n"
         quiz_message += f"Qual è il significato di:\n\n"
-        quiz_message += f"📖 *{self.current_word['word']}*\n\n"
+        quiz_message += f"🇮🇹 *{self.current_word['word']}*\n"
+        quiz_message += f"🇺🇦 *{self.current_word['ukrainian']}*\n\n"
         quiz_message += f"Scegli la risposta corretta:"
         
         await self.bot.send_message(
@@ -123,7 +125,7 @@ class ItalianWordBot:
             parse_mode='Markdown'
         )
         
-        print(f"Evening quiz sent: {self.current_word['word']}")
+        print(f"Evening quiz sent: {self.current_word['word']} ({self.current_word['ukrainian']})")
     
     async def handle_quiz_answer(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         """Handle quiz answer callback"""
@@ -137,12 +139,16 @@ class ItalianWordBot:
         
         if selected_index == correct_index:
             response = f"✅ *Corretto!* Bravissima! 🎉\n\n"
-            response += f"*{self.current_word['word']}* significa:\n{self.current_word['meaning']}"
+            response += f"🇮🇹 *{self.current_word['word']}*\n"
+            response += f"🇺🇦 *{self.current_word['ukrainian']}*\n\n"
+            response += f"*Significato:*\n{self.current_word['meaning']}"
             if 'example' in self.current_word:
                 response += f"\n\n*Esempio:*\n_{self.current_word['example']}_"
         else:
             response = f"❌ *Sbagliato!* Ma non ti preoccupare! 💪\n\n"
-            response += f"*{self.current_word['word']}* significa:\n{self.current_word['meaning']}"
+            response += f"🇮🇹 *{self.current_word['word']}*\n"
+            response += f"🇺🇦 *{self.current_word['ukrainian']}*\n\n"
+            response += f"*Significato:*\n{self.current_word['meaning']}"
             if 'example' in self.current_word:
                 response += f"\n\n*Esempio:*\n_{self.current_word['example']}_"
         
@@ -153,7 +159,7 @@ class ItalianWordBot:
         await update.message.reply_text(
             "👋 Ciao! Sono il bot delle parole italiane!\n\n"
             "Ogni giorno:\n"
-            "🌅 Alle 8:00 - Parola del giorno con significato\n"
+            "🌅 Alle 8:00 - Parola del giorno con significato (IT/UK)\n"
             "🌙 Alle 20:30 - Quiz per testare la memoria!\n\n"
             "Usa /test_morning per testare il messaggio mattutino\n"
             "Usa /test_evening per testare il quiz serale"
