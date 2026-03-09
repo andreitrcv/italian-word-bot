@@ -5,10 +5,19 @@ on:
     # 7:00 AM UTC = 8:00 AM CET (winter) / 6:00 AM UTC = 8:00 AM CEST (summer)
     - cron: '0 12 * * *'  # Adjust based on DST
   workflow_dispatch:
+    inputs:
+      action:
+        description: 'What to run'
+        required: true
+        default: 'word'
+        type: choice
+        options:
+          - word
+          - quiz
 
 jobs:
-  send-word:
-    name: Send Word of the Day
+  run-bot:
+    name: ${{ inputs.action == 'quiz' && 'Run Weekly Quiz' || 'Send Word of the Day' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -27,6 +36,7 @@ jobs:
           pip install python-telegram-bot==21.0 pytz==2024.1
 
       - name: Send Word of the Day
+        if: inputs.action != 'quiz'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
@@ -38,7 +48,51 @@ jobs:
           asyncio.run(bot.send_morning_message())
           "
 
-      - name: Commit updated seen words
+      - name: Run Weekly Quiz
+        if: inputs.action == 'quiz'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+        run: |
+          python -c "
+          import asyncio
+          from italian_word_bot import ItalianWordBot
+
+          WORKFLOW_QUESTION_DELAY_SECONDS = 5
+
+          async def run_quiz():
+              bot = ItalianWordBot()
+              
+              class MockBotData:
+                  def __init__(self):
+                      self._data = {}
+                  def __getitem__(self, key):
+                      return self._data.get(key, '')
+                  def __setitem__(self, key, value):
+                      self._data[key] = value
+                  def get(self, key, default=''):
+                      return self._data.get(key, default)
+              
+              class MockContext:
+                  def __init__(self):
+                      self.bot_data = MockBotData()
+              
+              context = MockContext()
+              await bot.send_quiz_intro()
+              
+              quiz_words = bot.get_quiz_words()
+              total_questions = len(quiz_words)
+              
+              for i, word_data in enumerate(quiz_words, 1):
+                  await bot.send_quiz_question(i, total_questions, word_data, context)
+                  await asyncio.sleep(WORKFLOW_QUESTION_DELAY_SECONDS)
+              
+              print('Quiz questions sent successfully!')
+
+          asyncio.run(run_quiz())
+          "
+
+      - name: Commit updated data
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
