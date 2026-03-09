@@ -11,6 +11,7 @@ TELEGRAM_BOT_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
 CHAT_ID = os.environ.get('CHAT_ID')
 TIMEZONE = pytz.timezone('Europe/Rome')
 WORDS_FILE = 'italian_words.json'
+SEEN_WORDS_FILE = 'seen_words.json'
 
 class ItalianWordBot:
     def __init__(self):
@@ -22,10 +23,38 @@ class ItalianWordBot:
         with open(WORDS_FILE, 'r', encoding='utf-8') as f:
             return json.load(f)
 
+    def load_seen_words(self):
+        """Load the set of already-seen word indices from JSON"""
+        try:
+            with open(SEEN_WORDS_FILE, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                return set(data.get('seen', []))
+        except (FileNotFoundError, json.JSONDecodeError):
+            return set()
+
+    def save_seen_words(self, seen):
+        """Persist the set of seen word indices to JSON"""
+        with open(SEEN_WORDS_FILE, 'w', encoding='utf-8') as f:
+            json.dump({'seen': list(seen)}, f)
+
     def get_random_word(self):
-        """Get a random Italian word"""
-        words = self.load_words()
-        return random.choice(words['words'])
+        """Get a random Italian word, avoiding repetition until all words are cycled"""
+        words = self.load_words()['words']
+        seen = self.load_seen_words()
+
+        # Reset if all words have been cycled through
+        if len(seen) >= len(words):
+            seen = set()
+
+        available = list(set(range(len(words))) - seen)
+        if not available:
+            seen = set()
+            available = list(range(len(words)))
+
+        chosen_index = random.choice(available)
+        seen.add(chosen_index)
+        self.save_seen_words(seen)
+        return words[chosen_index]
 
     async def send_morning_message(self):
         """Send the word of the day"""
