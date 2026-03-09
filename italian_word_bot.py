@@ -261,23 +261,34 @@ class ItalianWordBot:
     async def handle_quiz_answer(self, update, context):
         """Handle quiz answer callback"""
         query = update.callback_query
-        await query.answer()
         
         data = query.data
         if not data.startswith("quiz_"):
+            await query.answer()
             return
         
         parts = data.split("_", 2)
         if len(parts) < 3:
+            await query.answer()
             return
         
         question_num = parts[1]
         user_answer = parts[2]
         quiz_key = f"quiz_{question_num}"
         
-        correct_answer = context.bot_data.get(quiz_key, "")
+        correct_answer = context.bot_data.get(quiz_key)
         
-        if user_answer == correct_answer:
+        # Handle case where quiz data is not available (e.g., bot restarted)
+        if correct_answer is None:
+            await query.answer(text="⏰ Questo quiz è già terminato!", show_alert=True)
+            return
+        
+        is_correct = user_answer == correct_answer
+        
+        if is_correct:
+            # Provide immediate toast feedback
+            await query.answer(text="✅ Corretto!")
+            
             # Correct answer responses
             correct_responses = [
                 "✅ *Bravissimo!* Hai risposto correttamente! 🎉",
@@ -294,6 +305,9 @@ class ItalianWordBot:
                 self.quiz_scores[user_id] = 0
             self.quiz_scores[user_id] += 1
         else:
+            # Provide immediate toast feedback
+            await query.answer(text="❌ Sbagliato!")
+            
             # Wrong answer responses
             wrong_responses = [
                 f"❌ *Ops!* La risposta corretta era: *{correct_answer}*\n"
