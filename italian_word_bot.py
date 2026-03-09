@@ -17,6 +17,11 @@ SEEN_WORDS_FILE = 'seen_words.json'
 WEEKLY_HISTORY_FILE = 'weekly_history.json'
 QUIZ_QUESTIONS_COUNT = 5
 
+# Quiz timing configuration (in seconds)
+QUIZ_INTRO_DELAY_SECONDS = 3
+QUIZ_QUESTION_DELAY_SECONDS = 30  # Time between questions for users to answer
+QUIZ_FINAL_WAIT_SECONDS = 30  # Time to wait before showing results
+
 class ItalianWordBot:
     def __init__(self):
         self.application = Application.builder().token(TELEGRAM_BOT_TOKEN).build()
@@ -391,19 +396,19 @@ class ItalianWordBot:
         await self.send_quiz_intro()
         
         # Wait a moment before sending questions
-        await asyncio.sleep(3)
+        await asyncio.sleep(QUIZ_INTRO_DELAY_SECONDS)
         
         # Get quiz words
         quiz_words = self.get_quiz_words()
         total_questions = len(quiz_words)
         
-        # Send each question with a delay
+        # Send each question with a delay to give users time to answer
         for i, word_data in enumerate(quiz_words, 1):
             await self.send_quiz_question(i, total_questions, word_data, context)
-            await asyncio.sleep(15)  # Give time to answer each question
+            await asyncio.sleep(QUIZ_QUESTION_DELAY_SECONDS)
         
         # Wait for final answers and send results
-        await asyncio.sleep(20)
+        await asyncio.sleep(QUIZ_FINAL_WAIT_SECONDS)
         await self.send_quiz_results()
         
         print("Weekly quiz session completed.")

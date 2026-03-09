@@ -35,6 +35,13 @@ jobs:
           import asyncio
           from italian_word_bot import ItalianWordBot
 
+          # Note: The workflow uses a shorter delay (5s) between questions because
+          # the quiz interaction happens asynchronously via Telegram callbacks.
+          # Users answer at their own pace through the inline keyboard buttons.
+          # The longer delays in the bot's run_weekly_quiz method are for live
+          # polling mode where we want to pace the questions.
+          WORKFLOW_QUESTION_DELAY_SECONDS = 5
+
           async def run_quiz():
               bot = ItalianWordBot()
               
@@ -62,7 +69,7 @@ jobs:
               
               for i, word_data in enumerate(quiz_words, 1):
                   await bot.send_quiz_question(i, total_questions, word_data, context)
-                  await asyncio.sleep(2)  # Brief delay between questions
+                  await asyncio.sleep(WORKFLOW_QUESTION_DELAY_SECONDS)
               
               print('Quiz questions sent successfully!')
 
