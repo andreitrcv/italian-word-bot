@@ -2,7 +2,7 @@
 import os
 import json
 import random
-from datetime import time
+from datetime import time, datetime
 from telegram.ext import Application, CommandHandler, ContextTypes
 import pytz
 
@@ -11,6 +11,7 @@ TELEGRAM_BOT_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
 CHAT_ID = os.environ.get('CHAT_ID')
 TIMEZONE = pytz.timezone('Europe/Rome')
 WORDS_FILE = 'italian_words.json'
+SENT_WORDS_FILE = 'sent_words.json'
 
 class ItalianWordBot:
     def __init__(self):
@@ -22,10 +23,41 @@ class ItalianWordBot:
         with open(WORDS_FILE, 'r', encoding='utf-8') as f:
             return json.load(f)
 
+    def load_sent_words(self):
+        """Load the list of previously sent words from JSON file"""
+        try:
+            with open(SENT_WORDS_FILE, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            return {"sent": []}
+
+    def save_sent_word(self, word):
+        """Save a word to the sent words history"""
+        sent_data = self.load_sent_words()
+        sent_data["sent"].append({
+            "word": word,
+            "date": datetime.now(TIMEZONE).strftime("%Y-%m-%d")
+        })
+        with open(SENT_WORDS_FILE, 'w', encoding='utf-8') as f:
+            json.dump(sent_data, f, ensure_ascii=False, indent=2)
+
     def get_random_word(self):
-        """Get a random Italian word"""
+        """Get a random Italian word that hasn't been sent yet.
+        If all words have been sent, reset the history and start over."""
         words = self.load_words()
-        return random.choice(words['words'])
+        sent_data = self.load_sent_words()
+        sent_word_names = {entry["word"] for entry in sent_data["sent"]}
+
+        unsent_words = [w for w in words['words'] if w['word'] not in sent_word_names]
+
+        if not unsent_words:
+            # All words have been sent — reset and start a new cycle
+            sent_data["sent"] = []
+            with open(SENT_WORDS_FILE, 'w', encoding='utf-8') as f:
+                json.dump(sent_data, f, ensure_ascii=False, indent=2)
+            unsent_words = words['words']
+
+        return random.choice(unsent_words)
 
     async def send_morning_message(self):
         """Send the word of the day"""
@@ -46,6 +78,7 @@ class ItalianWordBot:
             text=message,
             parse_mode='Markdown'
         )
+        self.save_sent_word(word_data['word'])
         print(f"Morning message sent: {word_data['word']} ({word_data['ukrainian']})")
 
     async def scheduled_morning_task(self, context: ContextTypes.DEFAULT_TYPE):
