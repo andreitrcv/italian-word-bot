@@ -35,3 +35,11 @@ jobs:
           bot = ItalianWordBot()
           asyncio.run(bot.send_morning_message())
           "
+
+      - name: Save sent words history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sent_words.json
+          git diff --cached --quiet || git commit -m "Update sent words history"
+          git push
