@@ -2,7 +2,7 @@
 import os
 import json
 import random
-from datetime import time
+from datetime import datetime, time
 from telegram.ext import Application, CommandHandler, ContextTypes
 import pytz
 
@@ -11,21 +11,67 @@ TELEGRAM_BOT_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
 CHAT_ID = os.environ.get('CHAT_ID')
 TIMEZONE = pytz.timezone('Europe/Rome')
 WORDS_FILE = 'italian_words.json'
+SENT_WORDS_FILE = 'sent_words.json'
 
 class ItalianWordBot:
-    def __init__(self):
-        self.application = Application.builder().token(TELEGRAM_BOT_TOKEN).build()
+    def __init__(self, application=None, words_file=WORDS_FILE, sent_words_file=SENT_WORDS_FILE):
+        self.words_file = words_file
+        self.sent_words_file = sent_words_file
+        self.application = application or Application.builder().token(TELEGRAM_BOT_TOKEN).build()
         self.bot = self.application.bot
 
     def load_words(self):
         """Load Italian words from JSON file"""
-        with open(WORDS_FILE, 'r', encoding='utf-8') as f:
+        with open(self.words_file, 'r', encoding='utf-8') as f:
             return json.load(f)
 
+    def load_sent_words(self):
+        """Load sent words tracking data"""
+        if not os.path.exists(self.sent_words_file):
+            return {'history': [], 'current_cycle': []}
+
+        with open(self.sent_words_file, 'r', encoding='utf-8') as f:
+            sent_words = json.load(f)
+
+        return {
+            'history': sent_words.get('history', []),
+            'current_cycle': sent_words.get('current_cycle', [])
+        }
+
+    def save_sent_words(self, sent_words):
+        """Persist sent words tracking data"""
+        with open(self.sent_words_file, 'w', encoding='utf-8') as f:
+            json.dump(sent_words, f, ensure_ascii=False, indent=2)
+            f.write('\n')
+
     def get_random_word(self):
-        """Get a random Italian word"""
-        words = self.load_words()
-        return random.choice(words['words'])
+        """Get a random Italian word that has not been sent in the current cycle"""
+        words = self.load_words()['words']
+        sent_words = self.load_sent_words()
+        current_cycle = set(sent_words['current_cycle'])
+        available_words = [word for word in words if word['word'] not in current_cycle]
+
+        if not available_words:
+            sent_words['current_cycle'] = []
+            self.save_sent_words(sent_words)
+            available_words = words
+
+        return random.choice(available_words)
+
+    def record_sent_word(self, word_data):
+        """Track sent words for future reuse and duplicate prevention"""
+        sent_words = self.load_sent_words()
+        word = word_data['word']
+
+        sent_words['history'].append({
+            'word': word,
+            'sent_at': datetime.now(TIMEZONE).isoformat()
+        })
+
+        if word not in sent_words['current_cycle']:
+            sent_words['current_cycle'].append(word)
+
+        self.save_sent_words(sent_words)
 
     async def send_morning_message(self):
         """Send the word of the day"""
@@ -46,6 +92,7 @@ class ItalianWordBot:
             text=message,
             parse_mode='Markdown'
         )
+        self.record_sent_word(word_data)
         print(f"Morning message sent: {word_data['word']} ({word_data['ukrainian']})")
 
     async def scheduled_morning_task(self, context: ContextTypes.DEFAULT_TYPE):
