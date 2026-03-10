@@ -11,6 +11,7 @@ TELEGRAM_BOT_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
 CHAT_ID = os.environ.get('CHAT_ID')
 TIMEZONE = pytz.timezone('Europe/Rome')
 WORDS_FILE = 'italian_words.json'
+SENT_WORDS_FILE = 'sent_words.json'
 
 class ItalianWordBot:
     def __init__(self):
@@ -22,10 +23,36 @@ class ItalianWordBot:
         with open(WORDS_FILE, 'r', encoding='utf-8') as f:
             return json.load(f)
 
+    def load_sent_words(self):
+        """Load the list of already-sent words from the tracking file"""
+        if not os.path.exists(SENT_WORDS_FILE):
+            return []
+        with open(SENT_WORDS_FILE, 'r', encoding='utf-8') as f:
+            return json.load(f)
+
+    def reset_sent_words(self):
+        """Clear the sent-words tracking file"""
+        with open(SENT_WORDS_FILE, 'w', encoding='utf-8') as f:
+            json.dump([], f)
+
+    def save_sent_word(self, word):
+        """Append a word to the sent-words tracking file"""
+        sent = self.load_sent_words()
+        sent.append(word)
+        with open(SENT_WORDS_FILE, 'w', encoding='utf-8') as f:
+            json.dump(sent, f, ensure_ascii=False, indent=2)
+
     def get_random_word(self):
-        """Get a random Italian word"""
+        """Get a random unsent Italian word; resets tracking when all words have been sent"""
         words = self.load_words()
-        return random.choice(words['words'])
+        all_words = words['words']
+        sent = set(self.load_sent_words())
+        unsent = [w for w in all_words if w['word'] not in sent]
+        if not unsent:
+            print("All words have been sent. Resetting sent-words list.")
+            self.reset_sent_words()
+            unsent = all_words
+        return random.choice(unsent)
 
     async def send_morning_message(self):
         """Send the word of the day"""
@@ -46,6 +73,7 @@ class ItalianWordBot:
             text=message,
             parse_mode='Markdown'
         )
+        self.save_sent_word(word_data['word'])
         print(f"Morning message sent: {word_data['word']} ({word_data['ukrainian']})")
 
     async def scheduled_morning_task(self, context: ContextTypes.DEFAULT_TYPE):
