@@ -10,6 +10,8 @@ jobs:
   send-word:
     name: Send Word of the Day
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     permissions:
       contents: write
